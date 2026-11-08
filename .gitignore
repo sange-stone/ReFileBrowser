@@ -1,0 +1,9 @@
+# 构建产物
+bin/
+obj/
+dist/
+
+# IDE / 本机
+.vs/
+*.user
+*.lnk

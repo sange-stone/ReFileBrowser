@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>ReFileBrowser</AssemblyName>
+    <RootNamespace>ReFileBrowser</RootNamespace>
+    <Product>ReFileBrowser</Product>
+    <Description>Tabbed file manager built on the native Windows Explorer view</Description>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <!-- 由 tools\make_icons.ps1 从 Fluent UI System Icons（MIT）生成 -->
+    <ApplicationIcon>assets\app.ico</ApplicationIcon>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <TieredPGO>true</TieredPGO>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <Version>0.1.0</Version>
+    <!-- 不用设计器，控件的公开属性不需要序列化标注 -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="assets\icons\*.png" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="assets\app.ico" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="LICENSE;THIRD-PARTY-NOTICES.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
